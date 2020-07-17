@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19681" started-at="2020-07-17T11:30:45Z" finished-at="2020-07-17T11:31:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19681" started-at="2020-07-17T11:30:45Z" finished-at="2020-07-17T11:31:05Z">
+      <class name="com.qa.flipkart.testcases.SearchPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.flipkart.testcases.SearchPageTest@1b604f19]" name="setup" is-config="true" duration-ms="10268" started-at="2020-07-17T17:00:45Z" finished-at="2020-07-17T17:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchButtonIsEnabledTest()[pri:0, instance:com.qa.flipkart.testcases.SearchPageTest@1b604f19]" name="searchButtonIsEnabledTest" duration-ms="100" started-at="2020-07-17T17:00:56Z" finished-at="2020-07-17T17:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchButtonIsEnabledTest -->
+        <test-method status="PASS" signature="searchButtonIsDisplayedTest()[pri:0, instance:com.qa.flipkart.testcases.SearchPageTest@1b604f19]" name="searchButtonIsDisplayedTest" duration-ms="2523" started-at="2020-07-17T17:00:56Z" finished-at="2020-07-17T17:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchButtonIsDisplayedTest -->
+        <test-method status="PASS" signature="verifySearchTextboxDisplayedTest()[pri:0, instance:com.qa.flipkart.testcases.SearchPageTest@1b604f19]" name="verifySearchTextboxDisplayedTest" duration-ms="114" started-at="2020-07-17T17:00:58Z" finished-at="2020-07-17T17:00:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchTextboxDisplayedTest -->
+        <test-method status="PASS" signature="verifySearchTextboxEnableTest()[pri:0, instance:com.qa.flipkart.testcases.SearchPageTest@1b604f19]" name="verifySearchTextboxEnableTest" duration-ms="76" started-at="2020-07-17T17:00:59Z" finished-at="2020-07-17T17:00:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchTextboxEnableTest -->
+        <test-method status="PASS" signature="verifyAutoSuggestTest()[pri:0, instance:com.qa.flipkart.testcases.SearchPageTest@1b604f19]" name="verifyAutoSuggestTest" duration-ms="6529" started-at="2020-07-17T17:00:59Z" finished-at="2020-07-17T17:01:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAutoSuggestTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.flipkart.testcases.SearchPageTest@1b604f19]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-07-17T17:01:05Z" finished-at="2020-07-17T17:01:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
