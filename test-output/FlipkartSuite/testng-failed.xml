@@ -3,25 +3,27 @@
 <suite name="Failed suite [FlipkartSuite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.qa.flipkart.testcases.HomePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="clickOnViewMoreTest"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.qa.flipkart.testcases.HomePageTest -->
-      <class name="com.qa.flipkart.testcases.SearchResultPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.qa.flipkart.testcases.SearchResultPageTest -->
       <class name="com.qa.flipkart.testcases.LoginPageTest">
         <methods>
           <include name="setup"/>
+          <include name="verifyInvalidPasswordTest"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.qa.flipkart.testcases.LoginPageTest -->
+      <class name="com.qa.flipkart.testcases.SearchPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
+      <class name="com.qa.flipkart.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="mouseHoverOnMoreTest"/>
+          <include name="mouseHoverOnElectronicsTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.testcases.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [FlipkartSuite] -->

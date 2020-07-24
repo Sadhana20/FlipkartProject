@@ -6,20 +6,8 @@
       <class name="com.qa.flipkart.testcases.HomePageTest">
         <methods>
           <include name="setup"/>
-          <include name="flipkartLogoIsDisplayedTest"/>
-          <include name="clickOnSearchTextboxTest"/>
           <include name="mouseHoverOnMoreTest"/>
-          <include name="mouseHoverOnTVnandAppliancesTest"/>
-          <include name="mouseHoverOnuserNameLabelTest"/>
-          <include name="verifyHomepageTitleTest"/>
-          <include name="mouseHoverOnMenTest"/>
-          <include name="verifyTextboxLabelTest"/>
-          <include name="mouseHoverOnElectronicsTest"/>
-          <include name="mouseHoverOnBabyAndKidTest"/>
           <include name="closeBrowser"/>
-          <include name="mouseHoverOnHomeandFurnitureTest"/>
-          <include name="mouseHoverOnWomenTest"/>
-          <include name="mouseHoverOnSportAndBookTest"/>
         </methods>
       </class> <!-- com.qa.flipkart.testcases.HomePageTest -->
     </classes>

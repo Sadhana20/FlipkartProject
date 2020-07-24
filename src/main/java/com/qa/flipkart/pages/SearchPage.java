@@ -55,7 +55,7 @@ public class SearchPage extends BaseClass {
 
 	public Boolean verifySearchTextboxEnable() {
 		return searchTextbox.isEnabled();
-
+		
 	}
 
 
