@@ -1,5 +1,7 @@
 package com.qa.flipkart.testcases;
 
-public class CartPageTest {
+import com.qa.flipkart.base.BaseClass;
+
+public class CartPageTest extends BaseClass {
 
 }
