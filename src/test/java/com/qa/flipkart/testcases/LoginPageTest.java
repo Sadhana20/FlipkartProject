@@ -22,31 +22,33 @@ public class LoginPageTest extends BaseClass {
 		initialization();
 		loginpage = new LoginPage();
 	}
-	
-	@Test
-	public void verifyInvalidMobNoTest()
-    {
-		loginpage.verifyInvalidMobNo(prop.getProperty("mobileno"),prop.getProperty("password"));
-				
-    }
-	@Test
-	public void verifyInvalidPasswordTest()
-    {
-		loginpage.verifyInvalidPassword(prop.getProperty("mobileno"),prop.getProperty("password"));
-    }
 
+	@Test(priority = 1)
+	public void loginTest() throws InterruptedException {
+		homepage = loginpage.login(prop.getProperty("mobileno"), prop.getProperty("password"));
+		
 
-	  @Test
-	  public void loginTest() throws InterruptedException
-	  { 
-		  homepage =loginpage.login(prop.getProperty("mobileno"), prop.getProperty("password"));
-		  
-		  Thread.sleep(3000);
-	  }
-	 
-	  
-	
-	
+		Thread.sleep(3000);
+	}
+
+	@Test(priority = 2)
+	public void verifyInvalidPasswordTest() {
+		loginpage.verifyInvalidInput(prop.getProperty("mobileno"), "sah12");
+
+	}
+
+	@Test(priority = 3)
+	public void verifyInvalidMobNoTest() {
+		loginpage.verifyInvalidInput("9860947525", prop.getProperty("password"));
+
+	}
+
+	@Test(priority = 4)
+	public void verifyBlankFieldLoginTest() {
+		loginpage.verifyInvalidInput("", "");
+
+	}
+
 	@AfterMethod
 	public void closeBrowser() {
 		driver.quit();

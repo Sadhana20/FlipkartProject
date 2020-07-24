@@ -3,8 +3,8 @@
 <suite name="FlipkartSuite">
   <test thread-count="5" name="Test">
     <classes>
-     <!-- <class name="com.qa.flipkart.testcases.LoginPageTest"/> 
-      <class name="com.qa.flipkart.testcases.HomePageTest"/> -->
+     <class name="com.qa.flipkart.testcases.LoginPageTest"/> 
+      <class name="com.qa.flipkart.testcases.HomePageTest"/>
        <class name="com.qa.flipkart.testcases.SearchPageTest"/>
     </classes>
   </test> <!-- Test -->
