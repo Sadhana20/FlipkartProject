@@ -3,16 +3,41 @@
 <suite name="Failed suite [FlipkartSuite]">
   <test name="Test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.qa.flipkart.testcases.SearchPageTest">
+=======
+      <class name="com.qa.flipkart.testcases.LoginPageTest">
+>>>>>>> 10c03352aecf54606b7590466593203f813953a9
         <methods>
           <include name="verifySearchTextboxDisplayedTest"/>
           <include name="verifySearchTextboxEnableTest"/>
           <include name="searchButtonIsDisplayedTest"/>
           <include name="setup"/>
+<<<<<<< HEAD
           <include name="verifyAutoSuggestTest"/>
           <include name="searchButtonIsEnabledTest"/>
         </methods>
       </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
+=======
+          <include name="verifyInvalidPasswordTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.testcases.LoginPageTest -->
+      <class name="com.qa.flipkart.testcases.SearchPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
+      <class name="com.qa.flipkart.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="mouseHoverOnMoreTest"/>
+          <include name="mouseHoverOnElectronicsTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.testcases.HomePageTest -->
+>>>>>>> 10c03352aecf54606b7590466593203f813953a9
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [FlipkartSuite] -->

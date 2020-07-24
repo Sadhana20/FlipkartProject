@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.qa.flipkart.base.BaseClass;
 import com.qa.flipkart.utility.Utility;
@@ -30,12 +31,20 @@ public class HomePage extends BaseClass {
 
 	@FindBy(xpath = "//span[@class='_1QZ6fC _3Lgyp8' and contains(text(),'Electronics')]")
 	WebElement electronicsLabel;
-
+    @FindBy(xpath = "//a[@title='Mobiles']")
+	WebElement mobileTitle;
+    
 	@FindBy(xpath = "//*[contains(text(), 'TVs & Appliances')]")
 	WebElement tvnandAppliancesLabel;
+	@FindBy(xpath = "//a[@title='Microwave Ovens']")
+	WebElement microwaveOvens;
 
 	@FindBy(xpath = "//span[@class='_1QZ6fC _3Lgyp8' and contains(text(),'Men')]")
 	WebElement menLabel;
+	
+	
+	
+	
 
 	@FindBy(xpath = "//span[@class='_1QZ6fC _3Lgyp8' and contains(text(),'Women')]")
 	WebElement womenLabel;
@@ -88,61 +97,60 @@ public class HomePage extends BaseClass {
 
 	public void mouseHoverOnTVnandAppliances() throws InterruptedException {
 		util.mouseHover(driver, tvnandAppliancesLabel);
-
+		Assert.assertTrue(microwaveOvens.isDisplayed(), "Mouse not Hower on Microwave Ovens ");
 		Thread.sleep(2000);
 
 	}
 
 	public void mouseHoverOnElectronics() throws InterruptedException {
 		util.mouseHover(driver, electronicsLabel);
-
+		Assert.assertTrue(mobileTitle.isDisplayed(), "Mouse not Hower on Electronics Label");
 		Thread.sleep(2000);
 
 	}
 
 	public void mouseHoverOnMen() throws InterruptedException {
 		util.mouseHover(driver, menLabel);
-
-		Thread.sleep(2000);
+				Thread.sleep(2000);
 
 	}
 
 	public void mouseHoverOnWomen() throws InterruptedException {
 		util.mouseHover(driver, womenLabel);
-
+	
 		Thread.sleep(3000);
 
 	}
 
 	public void mouseHoverOnBabyAndKid() throws InterruptedException {
 		util.mouseHover(driver, babyandKidLabel);
-
+	//	Assert.assertTrue(mobileTitle.isDisplayed(), "Mouse not Hower on Electronics Label");
 		Thread.sleep(2000);
 	}
 
 	public void mouseHoverOnHomeandFurniture() throws InterruptedException {
 		util.mouseHover(driver, homeAndFurnitureLabel);
-
+	//	Assert.assertTrue(mobileTitle.isDisplayed(), "Mouse not Hower on Electronics Label");
 		Thread.sleep(2000);
 	}
 
 	public void mouseHoverOnSportAndBook() throws InterruptedException {
 		util.mouseHover(driver, sportAndBookLabel);
-
+	//	Assert.assertTrue(mobileTitle.isDisplayed(), "Mouse not Hower on Electronics Label");
 		Thread.sleep(2000);
 
 	}
 
 	public void mouseHoverOnUserNameLabel() throws InterruptedException {
 		util.mouseHover(driver, userNameLabel);
-
+	//	Assert.assertTrue(mobileTitle.isDisplayed(), "Mouse not Hower on Electronics Label");
 		Thread.sleep(2000);
 
 	}
 
 	public void mouseHoverOnMoreLabel() throws InterruptedException {
 		util.mouseHover(driver, moreLabel);
-
+		Assert.assertTrue(mobileTitle.isDisplayed(), "Mouse not Hower on Electronics Label");
 		Thread.sleep(2000);
 
 	}
