@@ -16,7 +16,6 @@
           <include name="verifyTextboxLabelTest"/>
           <include name="mouseHoverOnElectronicsTest"/>
           <include name="mouseHoverOnBabyAndKidTest"/>
-          <include name="closeBrowser"/>
           <include name="mouseHoverOnHomeandFurnitureTest"/>
           <include name="mouseHoverOnWomenTest"/>
           <include name="mouseHoverOnSportAndBookTest"/>
