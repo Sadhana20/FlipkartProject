@@ -53,5 +53,8 @@ public class CartPageTest extends BaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
+import com.qa.flipkart.base.BaseClass;
+
+public class CartPageTest extends BaseClass {
 
 }

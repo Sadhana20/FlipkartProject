@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="251136" started-at="2020-07-19T06:19:13Z" finished-at="2020-07-19T06:23:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="251136" started-at="2020-07-19T06:19:13Z" finished-at="2020-07-19T06:23:24Z">
+      <class name="com.qa.flipkart.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="setup" is-config="true" duration-ms="173826" started-at="2020-07-19T11:49:13Z" finished-at="2020-07-19T11:52:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="loginTest" duration-ms="10859" started-at="2020-07-19T11:52:06Z" finished-at="2020-07-19T11:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="closeBrowser" is-config="true" duration-ms="1469" started-at="2020-07-19T11:52:17Z" finished-at="2020-07-19T11:52:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="setup" is-config="true" duration-ms="42721" started-at="2020-07-19T11:52:19Z" finished-at="2020-07-19T11:53:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyInvalidMobNoTest()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="verifyInvalidMobNoTest" duration-ms="33" started-at="2020-07-19T11:53:01Z" finished-at="2020-07-19T11:53:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidMobNoTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="closeBrowser" is-config="true" duration-ms="921" started-at="2020-07-19T11:53:01Z" finished-at="2020-07-19T11:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="setup" is-config="true" duration-ms="20261" started-at="2020-07-19T11:53:02Z" finished-at="2020-07-19T11:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyInvalidPasswordTest()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="verifyInvalidPasswordTest" duration-ms="2" started-at="2020-07-19T11:53:23Z" finished-at="2020-07-19T11:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPasswordTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.flipkart.testcases.LoginPageTest@20e2cbe0]" name="closeBrowser" is-config="true" duration-ms="999" started-at="2020-07-19T11:53:23Z" finished-at="2020-07-19T11:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.flipkart.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+<testng-results skipped="0" failed="3" total="22" passed="19">
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="44257" started-at="2020-07-27T06:18:22Z" finished-at="2020-07-27T06:19:07Z">
@@ -34,4 +82,8 @@
       </class> <!-- com.qa.flipkart.testcases.CartPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- FlipkartSuite -->
 </testng-results>

@@ -8,6 +8,22 @@
           <include name="verifyCartPage"/>
           <include name="tearDown"/>
           <include name="setup"/>
+
+          <include name="mouseHoverOnMoreTest"/>
+
+          <include name="mouseHoverOnTVnandAppliancesTest"/>
+          <include name="mouseHoverOnuserNameLabelTest"/>
+          <include name="verifyHomepageTitleTest"/>
+          <include name="mouseHoverOnMenTest"/>
+          <include name="verifyTextboxLabelTest"/>
+          <include name="mouseHoverOnElectronicsTest"/>
+          <include name="mouseHoverOnBabyAndKidTest"/>
+          <include name="mouseHoverOnHomeandFurnitureTest"/>
+          <include name="mouseHoverOnWomenTest"/>
+          <include name="mouseHoverOnSportAndBookTest"/>
+
+          <include name="closeBrowser"/>
+
         </methods>
       </class> <!-- com.qa.flipkart.testcases.CartPageTest -->
     </classes>

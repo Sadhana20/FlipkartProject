@@ -6,6 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.flipkart.base.BaseClass;
 
+import com.qa.flipkart.base.BaseClass;
+
 public class CartPage extends BaseClass {
 
 	// page factory-object repository
