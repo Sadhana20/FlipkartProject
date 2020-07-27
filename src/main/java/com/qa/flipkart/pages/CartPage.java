@@ -1,5 +1,7 @@
 package com.qa.flipkart.pages;
 
-public class CartPage {
+import com.qa.flipkart.base.BaseClass;
+
+public class CartPage extends BaseClass {
 
 }

@@ -1,7 +1,6 @@
 package com.qa.flipkart.base;
 
 import java.io.FileInputStream;
-import org.openqa.selenium.interactions.Actions;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
@@ -16,13 +15,13 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	//Actions action =new Actions(driver);
-	
+	// Actions action =new Actions(driver);
+
 	public BaseClass() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream("C:\\Users\\Shivam\\eclipse-workspace"
-					+ "\\FlipkartTest\\src\\main\\java\\com\\qa\\flipkart\\config\\config.properties");
+			FileInputStream fis = new FileInputStream(
+					"C:\\Users\\monika hase\\FlipkartProject\\FlipkartProject\\src\\main\\java\\com\\qa\\flipkart\\config\\config.properties");
 			prop.load(fis);
 
 		} catch (FileNotFoundException e) {

@@ -7,7 +7,20 @@
         <methods>
           <include name="setup"/>
           <include name="mouseHoverOnMoreTest"/>
+<<<<<<< HEAD
+          <include name="mouseHoverOnTVnandAppliancesTest"/>
+          <include name="mouseHoverOnuserNameLabelTest"/>
+          <include name="verifyHomepageTitleTest"/>
+          <include name="mouseHoverOnMenTest"/>
+          <include name="verifyTextboxLabelTest"/>
+          <include name="mouseHoverOnElectronicsTest"/>
+          <include name="mouseHoverOnBabyAndKidTest"/>
+          <include name="mouseHoverOnHomeandFurnitureTest"/>
+          <include name="mouseHoverOnWomenTest"/>
+          <include name="mouseHoverOnSportAndBookTest"/>
+=======
           <include name="closeBrowser"/>
+>>>>>>> 10c03352aecf54606b7590466593203f813953a9
         </methods>
       </class> <!-- com.qa.flipkart.testcases.HomePageTest -->
     </classes>
