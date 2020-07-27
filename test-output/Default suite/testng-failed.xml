@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.flipkart.testcases.HomePageTest">
+      <class name="com.qa.flipkart.testcases.CartPageTest">
         <methods>
+          <include name="verifyCartPage"/>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="mouseHoverOnMoreTest"/>
-          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.qa.flipkart.testcases.HomePageTest -->
+      </class> <!-- com.qa.flipkart.testcases.CartPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
