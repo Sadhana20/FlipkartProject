@@ -26,7 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Keywords {
 
-	private static WebDriver driver;
+	public static WebDriver driver;
 
 	/**
 	 * this method is used to opening the specified browser <br>
@@ -161,7 +161,7 @@ public class Keywords {
 		driver.manage().window().maximize();
 	}
 
-	public static void closeAllBrowser() {
+	public static void closeAllWindow() {
 		driver.quit();
 	}
 

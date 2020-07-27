@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FlipkartSuite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
+      <class name="com.qa.flipkart.testcases.CartPageTest">
       <class name="com.qa.flipkart.testcases.SearchPageTest">
-=======
+
       <class name="com.qa.flipkart.testcases.LoginPageTest">
         <methods>
+          <include name="verifyCartPage"/>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyInvalidPasswordTest"/>
-          <include name="closeBrowser"/>
         </methods>
+      </class> <!-- com.qa.flipkart.testcases.CartPageTest -->
       </class> <!-- com.qa.flipkart.testcases.LoginPageTest -->
       <class name="com.qa.flipkart.testcases.SearchPageTest">
         <methods>
@@ -20,22 +21,18 @@
         </methods>
       </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
       <class name="com.qa.flipkart.testcases.HomePageTest">
->>>>>>> 10c03352aecf54606b7590466593203f813953a9
         <methods>
           <include name="verifySearchTextboxDisplayedTest"/>
           <include name="verifySearchTextboxEnableTest"/>
           <include name="searchButtonIsDisplayedTest"/>
           <include name="setup"/>
-<<<<<<< HEAD
           <include name="verifyAutoSuggestTest"/>
           <include name="searchButtonIsEnabledTest"/>
-=======
           <include name="mouseHoverOnMoreTest"/>
           <include name="mouseHoverOnElectronicsTest"/>
           <include name="closeBrowser"/>
->>>>>>> 10c03352aecf54606b7590466593203f813953a9
         </methods>
       </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [FlipkartSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
