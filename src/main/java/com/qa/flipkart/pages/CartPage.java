@@ -1,14 +1,8 @@
 package com.qa.flipkart.pages;
 
-<<<<<<< HEAD
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-=======
-import com.qa.flipkart.base.BaseClass;
-
-public class CartPage extends BaseClass {
->>>>>>> master
 
 import com.qa.flipkart.base.BaseClass;
 

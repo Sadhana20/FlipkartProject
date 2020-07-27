@@ -42,7 +42,7 @@ public class CartPageTest extends BaseClass {
 
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void verifyShopnowBtn() {
 		boolean flag = cartPage.validateShopnowBtn();
 		Assert.assertTrue(flag);
