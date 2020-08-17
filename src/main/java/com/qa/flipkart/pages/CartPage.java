@@ -5,8 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.flipkart.base.BaseClass;
-
-import com.qa.flipkart.base.BaseClass;
+import com.qa.flipkart.keywords.Constants;
 
 public class CartPage extends BaseClass {
 
@@ -22,11 +21,11 @@ public class CartPage extends BaseClass {
 	WebElement shopnowBtn;
 
 	public CartPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(Constants.driver, this);
 	}
 
 	public String validateCartTitle() {
-		return driver.getTitle();
+		return Constants.driver.getTitle();
 
 	}
 

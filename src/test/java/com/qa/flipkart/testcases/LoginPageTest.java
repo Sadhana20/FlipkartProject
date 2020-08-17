@@ -1,11 +1,12 @@
 package com.qa.flipkart.testcases;
 
-import org.testng.annotations.AfterClass;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import com.qa.flipkart.base.BaseClass;
+import com.qa.flipkart.keywords.Constants;
 import com.qa.flipkart.pages.HomePage;
 import com.qa.flipkart.pages.LoginPage;
 
@@ -25,21 +26,21 @@ public class LoginPageTest extends BaseClass {
 
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {
-		homepage = loginpage.login(prop.getProperty("mobileno"), prop.getProperty("password"));
-		
-
-		Thread.sleep(3000);
+		HomePage flag = loginpage.login(Constants.prop.getProperty("mobileno"), Constants.prop.getProperty("password"));
+		Thread.sleep(4000);
+		Assert.assertEquals(flag, "unable to login");
 	}
 
 	@Test(priority = 2)
 	public void verifyInvalidPasswordTest() {
-		loginpage.verifyInvalidInput(prop.getProperty("mobileno"), "sah12");
+		boolean flag = loginpage.verifyInvalidInput(Constants.prop.getProperty("mobileno"), "sah12");
+		Assert.assertTrue(flag, "wrong Mobile No and Password   error Message is not displayed");
 
 	}
 
 	@Test(priority = 3)
 	public void verifyInvalidMobNoTest() {
-		loginpage.verifyInvalidInput("9860947525", prop.getProperty("password"));
+		loginpage.verifyInvalidInput("9860947525", Constants.prop.getProperty("password"));
 
 	}
 
@@ -51,6 +52,6 @@ public class LoginPageTest extends BaseClass {
 
 	@AfterMethod
 	public void closeBrowser() {
-		driver.quit();
+		Constants.driver.quit();
 	}
 }

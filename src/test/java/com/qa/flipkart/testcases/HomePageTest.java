@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qa.flipkart.base.BaseClass;
-
+import com.qa.flipkart.keywords.Constants;
 import com.qa.flipkart.pages.HomePage;
 import com.qa.flipkart.pages.LoginPage;
 import com.qa.flipkart.pages.SearchResultPage;
@@ -27,9 +27,9 @@ public class HomePageTest extends BaseClass {
 	public void setup() {
 		initialization();
 		loginpage = new LoginPage();
-		 searchresultpage=new SearchResultPage();
+		searchresultpage = new SearchResultPage();
 
-		homepage = loginpage.login(prop.getProperty("mobileno"), prop.getProperty("password"));
+		homepage = loginpage.login(Constants.prop.getProperty("mobileno"), Constants.prop.getProperty("password"));
 
 	}
 
@@ -56,7 +56,7 @@ public class HomePageTest extends BaseClass {
 	public void mouseHoverOnTVnandAppliancesTest() throws InterruptedException {
 		homepage.mouseHoverOnTVnandAppliances();
 	}
-	
+
 	@Test(priority = 1)
 	public void verifyTextboxLabelTest() {
 
@@ -99,18 +99,17 @@ public class HomePageTest extends BaseClass {
 	public void mouseHoverOnMoreTest() throws InterruptedException {
 		homepage.mouseHoverOnMoreLabel();
 	}
-	
-	
-	 @Test(priority = 9)
+
+	@Test(priority = 9)
 	public void clickOnSearchTextboxTest() {
 
-		 searchresultpage= homepage.clickOnSearchTextbox();
+		searchresultpage = homepage.clickOnSearchTextbox();
 
 	}
 
 	@AfterClass
 	public void closeBrowser() throws InterruptedException {
 
-		 driver.quit();
+		Constants.driver.quit();
 	}
 }

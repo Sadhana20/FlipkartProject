@@ -2,19 +2,13 @@ package com.qa.flipkart.pages;
 
 import java.util.List;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 
 import com.qa.flipkart.base.BaseClass;
+import com.qa.flipkart.keywords.Constants;
 import com.qa.flipkart.utility.Utility;
 
 public class SearchPage extends BaseClass {
@@ -23,7 +17,6 @@ public class SearchPage extends BaseClass {
 
 	@FindBy(xpath = "//button[@type=\"submit\"]")
 	WebElement searchButton;
-
 
 	@FindBy(xpath = "//button[@class='vh79eN']")
 	WebElement searchIcon;
@@ -38,7 +31,7 @@ public class SearchPage extends BaseClass {
 	 */
 
 	public SearchPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(Constants.driver, this);
 	}
 
 	public Boolean searchButtonIsDisplayed() {
@@ -48,29 +41,27 @@ public class SearchPage extends BaseClass {
 	public Boolean searchButtonIsEnabled() {
 		return searchButton.isEnabled();
 	}
-	
+
 	public Boolean verifySearchTextboxDisplay() {
 		return searchTextbox.isDisplayed();
 	}
 
 	public Boolean verifySearchTextboxEnable() {
 		return searchTextbox.isEnabled();
-		
-	}
 
+	}
 
 	public SearchResultPage verifyAutoSuggest() throws InterruptedException {
 		searchTextbox.sendKeys("Men");
 		Thread.sleep(3000);
-		
-		List<WebElement> suggesion = driver.findElements(By.xpath("//div[contains(text(),'men')]"));
+
+		List<WebElement> suggesion = Constants.driver.findElements(By.xpath("//div[contains(text(),'men')]"));
 
 		System.out.println("Auto Suggest List ::" + suggesion.size());
 
-		
 		for (WebElement suggest : suggesion) {
-			//System.out.println(suggest.getText());
-			
+			// System.out.println(suggest.getText());
+
 			if (suggest.getText().contains("mens shoes")) {
 				suggest.click();
 				Thread.sleep(3000);
@@ -80,8 +71,7 @@ public class SearchPage extends BaseClass {
 			}
 		}
 		return new SearchResultPage();
-		 
+
 	}
 
 }
-

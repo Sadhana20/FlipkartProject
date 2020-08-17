@@ -3,36 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.flipkart.testcases.CartPageTest">
-      <class name="com.qa.flipkart.testcases.SearchPageTest">
-
       <class name="com.qa.flipkart.testcases.LoginPageTest">
         <methods>
-          <include name="verifyCartPage"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="verifyBlankFieldLoginTest"/>
+          <include name="loginTest"/>
+          <include name="closeBrowser"/>
+          <include name="verifyInvalidMobNoTest"/>
         </methods>
-      </class> <!-- com.qa.flipkart.testcases.CartPageTest -->
       </class> <!-- com.qa.flipkart.testcases.LoginPageTest -->
-      <class name="com.qa.flipkart.testcases.SearchPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
-      <class name="com.qa.flipkart.testcases.HomePageTest">
-        <methods>
-          <include name="verifySearchTextboxDisplayedTest"/>
-          <include name="verifySearchTextboxEnableTest"/>
-          <include name="searchButtonIsDisplayedTest"/>
-          <include name="setup"/>
-          <include name="verifyAutoSuggestTest"/>
-          <include name="searchButtonIsEnabledTest"/>
-          <include name="mouseHoverOnMoreTest"/>
-          <include name="mouseHoverOnElectronicsTest"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.qa.flipkart.testcases.SearchPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

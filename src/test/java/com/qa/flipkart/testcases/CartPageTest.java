@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.flipkart.base.BaseClass;
+import com.qa.flipkart.keywords.Constants;
 import com.qa.flipkart.pages.CartPage;
 import com.qa.flipkart.pages.HomePage;
 import com.qa.flipkart.pages.LoginPage;
@@ -29,7 +30,7 @@ public class CartPageTest extends BaseClass {
 		util = new Utility();
 		loginPage = new LoginPage();
 		homePage = new HomePage();
-		homePage = loginPage.login(prop.getProperty("mobileno"), prop.getProperty("password"));
+		homePage = loginPage.login(Constants.prop.getProperty("mobileno"), Constants.prop.getProperty("password"));
 		cartPage.clickOnCartLink();
 		Thread.sleep(4000);
 
@@ -51,6 +52,6 @@ public class CartPageTest extends BaseClass {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		Constants.driver.quit();
 	}
 }

@@ -44,7 +44,7 @@ public class Keywords {
 		switch (browserName) {
 		case "Chrome":
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			Constants.driver = new ChromeDriver();
 
 			break;
 		case "Firefox":

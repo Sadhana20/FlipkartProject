@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
 import com.qa.flipkart.base.BaseClass;
+import com.qa.flipkart.keywords.Constants;
 
 public class Utility extends BaseClass {
 
@@ -18,11 +19,11 @@ public class Utility extends BaseClass {
 	}
 
 	public void implicitWait() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Constants.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	public static void waitToSendkeys(WebDriver driver, WebElement element, String value) {
-		FluentWait wait = new FluentWait(driver);
+		FluentWait wait = new FluentWait(Constants.driver);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.sendKeys(value);
 	}
